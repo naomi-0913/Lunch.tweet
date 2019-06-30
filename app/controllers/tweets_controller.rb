@@ -7,6 +7,7 @@ class TweetsController < ApplicationController
  end
 
  def new
+  @tweet = Tweet.new
  end
 
  def create
@@ -36,7 +37,7 @@ class TweetsController < ApplicationController
 
  private
  def tweet_params
-   params.permit(:name, :image, :text)
+   params.require(:tweet).permit(:name, :image, :text)
   end
 
   def move_to_index
