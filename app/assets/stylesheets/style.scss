@@ -7,15 +7,14 @@
  * http://ipafont.ipa.go.jp/ipa_font_license_v1.html（IPAフォントライセンスv1.0のURL）
  */
 @font-face {
-    font-family: 'ほのか明朝';
-    src: url('font_1_honokamin.ttf') format('truetype');
+  font-family: 'MS UI Gothic','Hannotate TC','Noteworthy',sans-serif;    src: url('font_1_honokamin.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Unica+One);
 
-$accent: #57C3E9;
+$accent: #FF8C00;
 $black: #292929;
 $dark: #666;
 $darkGray: #999999;
@@ -51,8 +50,7 @@ line-height: 1.57;
   letter-spacing: 0.15em;
   font-size: 16px;
   color: $dark;
-  font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
-  margin: 0;
+  font-family: 'MS UI Gothic','Hannotate TC','Noteworthy',sans-serif;  margin: 0;
 }
 
 a {
@@ -69,8 +67,7 @@ a {
 }
 
 .serif {
-  font-family: 'ほのか明朝',serif;
-}
+  font-family: 'MS UI Gothic','Hannotate TC','Noteworthy',sans-serif;}
 
 .ultra {
   font-size: 2em !important;
@@ -121,7 +118,7 @@ h1,h2,h3,h4,h5,h6 {
 header.header {
   @include basePadding;
   border-bottom: 1px solid $gray;
-  background-color: #fff;
+  background-color: #E6E6FA;
   position: fixed;
   top: 0;
   left: 0;
@@ -221,8 +218,7 @@ div.contents.row {
     }
   }
   .new_user{
-  font-family: "游ゴシック", "YuGothic";
-  }
+    font-family: 'MS UI Gothic','Hannotate TC','Noteworthy',sans-serif;  }
   div.content_post {
     @include boxBase(20px 0 ,30px);
     position: relative;
@@ -339,8 +335,7 @@ form {
     @include boxBase(5px 0 15px,10px);
     border: 1px solid $gray;
     border-radius: 5px;
-    font-family: "游ゴシック", "YuGothic";
-  }
+    font-family: 'MS UI Gothic','Hannotate TC','Noteworthy',sans-serif;  }
   input[type="submit"] {
     @extend .transition;
     background-color: $accent;
